@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import { Admin, Resource } from 'react-admin';
 import simpleRestClient from 'ra-data-simple-rest';
+import jsonServerRestClient from 'ra-data-json-server';
 import { PostList, PostEdit, PostCreate } from './posts';
 import { UserList } from './users'
 
@@ -10,8 +11,8 @@ class App extends Component {
     return (
       <div className="App">
         <Admin dataProvider={simpleRestClient('http://localhost:3000')}>
-            <Resource name="posts" list={PostList} edit={PostEdit} create={PostCreate} />
-            <Resource name="users" list={UserList} />
+          <Resource name="posts" list={PostList} edit={PostEdit} create={PostCreate} />
+          <Resource name="users" list={UserList} />
         </Admin>
       </div>
     );
