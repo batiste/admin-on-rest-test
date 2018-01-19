@@ -1,18 +1,8 @@
 // in posts.js
 import React from 'react';
 import { List, Datagrid, Edit, Create, SimpleForm, DateField, TextField, EditButton, DisabledInput, TextInput, LongTextInput, DateInput } from 'react-admin';
-import { withStyles } from 'material-ui/styles';
 
-const styles = {
-    cell: {
-        backgroundColor: 'lightgrey',
-    },
-    field: {
-        textDecoration: 'none',
-    },
-};
-
- const PostListR = (props) => (
+export const PostList = (props) => (
     <List {...props}>
         <Datagrid>
             <TextField source="id" />
@@ -24,7 +14,6 @@ const styles = {
         </Datagrid>
     </List>
 );
-export const PostList = withStyles(styles)(PostListR)
 
 const PostTitle = ({ record }) => {
     return <span>Post {record ? `"${record.title}"` : ''}</span>;

@@ -1,20 +1,21 @@
 // in app.js
-import React from 'react';
-import { render } from 'react-dom';
+import React, { Component } from 'react';
 import { Admin, Resource } from 'react-admin';
 import simpleRestClient from 'ra-data-simple-rest';
-import { MuiThemeProvider, createMuiTheme } from 'material-ui/styles';
 import { PostList, PostEdit, PostCreate } from './posts';
-import blue from 'material-ui/colors/indigo';
+import { UserList } from './users'
 
-const theme = createMuiTheme({palette: {
-  primary: { light: blue[300], main: blue[500], dark: blue[700] },
-    shades: { light: blue[300], main: blue[500], dark: blue[700] }
-}});
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <Admin dataProvider={simpleRestClient('http://localhost:3000')}>
+            <Resource name="posts" list={PostList} edit={PostEdit} create={PostCreate} />
+            <Resource name="users" list={UserList} />
+        </Admin>
+      </div>
+    );
+  }
+}
 
-export default render(
-  <Admin dataProvider={simpleRestClient('http://localhost:3000')}>
-      <Resource name="posts" list={PostList} edit={PostEdit} create={PostCreate} />
-  </Admin>,
-  document.getElementById('root')
-);
+export default App;
