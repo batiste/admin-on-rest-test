@@ -4,8 +4,8 @@
   "private": true,
   "dependencies": {
     "material-ui": "1.0.0-beta.17",
-    "ra-data-json-server": "2.0.0-alpha1",
-    "ra-data-simple-rest": "2.0.0-alpha1",
+    "ra-data-json-server": "2.0.0-beta1",
+    "ra-data-simple-rest": "2.0.0-beta1",
     "react": "16.0.0",
     "react-admin": "2.0.0-beta1",
     "react-dom": "^16.0.0",

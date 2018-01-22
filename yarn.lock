@@ -5270,19 +5270,19 @@ querystringify@~1.0.0:
   version "1.0.0"
   resolved "https://ric.jfrog.io/ric/api/npm/npm/querystringify/-/querystringify-1.0.0.tgz#6286242112c5b712fa654e526652bf6a13ff05cb"
 
-ra-data-json-server@2.0.0-alpha1:
-  version "2.0.0-alpha1"
-  resolved "https://ric.jfrog.io/ric/api/npm/npm/ra-data-json-server/-/ra-data-json-server-2.0.0-alpha1.tgz#13c392509b431341a414cc31249e67bce4b199c0"
+ra-data-json-server@2.0.0-beta1:
+  version "2.0.0-beta1"
+  resolved "https://ric.jfrog.io/ric/api/npm/npm/ra-data-json-server/-/ra-data-json-server-2.0.0-beta1.tgz#cf71867150ffcd3daf8cccf38c09c5ee12f36d5c"
   dependencies:
     query-string "~5.0.0"
-    react-admin "^2.0.0-alpha1"
+    react-admin "^2.0.0-beta1"
 
-ra-data-simple-rest@2.0.0-alpha1:
-  version "2.0.0-alpha1"
-  resolved "https://ric.jfrog.io/ric/api/npm/npm/ra-data-simple-rest/-/ra-data-simple-rest-2.0.0-alpha1.tgz#acdd415b002a36864b1db1895e48c69cc6ad53fc"
+ra-data-simple-rest@2.0.0-beta1:
+  version "2.0.0-beta1"
+  resolved "https://ric.jfrog.io/ric/api/npm/npm/ra-data-simple-rest/-/ra-data-simple-rest-2.0.0-beta1.tgz#a208d3660cddae336154fa692a21d5fd28644340"
   dependencies:
     query-string "~5.0.0"
-    react-admin "^2.0.0-alpha1"
+    react-admin "^2.0.0-beta1"
 
 ra-language-english@^2.0.0-beta1:
   version "2.0.0-beta1"
@@ -5342,7 +5342,7 @@ rc@^1.0.1, rc@^1.1.6, rc@^1.1.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-admin@2.0.0-beta1, react-admin@^2.0.0-alpha1:
+react-admin@2.0.0-beta1, react-admin@^2.0.0-beta1:
   version "2.0.0-beta1"
   resolved "https://ric.jfrog.io/ric/api/npm/npm/react-admin/-/react-admin-2.0.0-beta1.tgz#9ac0f4ac09fa5222bf890332f2b9742534e1cdd9"
   dependencies:
