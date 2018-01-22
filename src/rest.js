@@ -1,7 +1,6 @@
 import { stringify } from 'query-string';
 import {
     fetchUtils,
-    flattenObject,
     GET_LIST,
     GET_ONE,
     GET_MANY,
